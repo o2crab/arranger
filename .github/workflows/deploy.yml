@@ -18,6 +18,8 @@ jobs:
     - run: cp -r ./dist/ ./public/
     - name: Upload GitHub Pages artifact
       uses: actions/upload-pages-artifact@v1
+      with:
+        path: "dist/"
 
   deploy:
     permissions:
